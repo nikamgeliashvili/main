@@ -1,0 +1,99 @@
+.main-container{
+     height: calc(100vh - 200px);
+     background-color: #00b900;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+
+     .main-title{  
+        h1{
+            font-size: 65px;
+        }
+
+        span{
+            font-size: 30px;
+        }
+
+     }
+
+
+     .fb-page{
+        margin-top:70px;
+      
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+
+            span{     
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        img{
+            width: 75px;
+            height: 75px;
+            padding-right: 20px;
+        }
+     }
+     
+
+}
+
+footer{
+    padding: 30px 40px;
+    
+  .footer-top{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 25px;
+
+        
+        img{
+            height:60px;
+            margin: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .main-container{
+        height: unset;
+
+        .main-title{
+            padding: 60px 15px;
+
+            h1{
+                font-size: 40px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+        }
+
+
+        .fb-page a {
+            display: flex;
+            align-items: unset;
+            flex-direction: column;
+        }
+        
+        
+    }
+
+    footer {
+        padding: 30px 15px;
+
+        .footer-top{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
